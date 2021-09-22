@@ -228,24 +228,27 @@ void printPreorder()
 }
 void preorder(struct Node *node)
 {
- printf("%d\t",node->data);
- if(node->left)
- preorder(node->left);
- if(node->right)
- preorder(node->right);
+   printf("%d\t",node->data);
+   if(node->left)
+   preorder(node->left);
+   if(node->right)
+   preorder(node->right);
 }
+
 void printPostorder()
 {
- if(root){
+ if(root)
+ {
       postorder(root);
-
  }
  else printf("BST is empty");
- }
- void postorder(struct Node *node){
- if(node->left)
- postorder(node->left);
- if(node->right)
- postorder(node->right);
- printf("%d\t",node->data);
 }
+
+ void postorder(struct Node *node)
+ {
+    if(node->left)
+    postorder(node->left);
+    if(node->right)
+    postorder(node->right);
+    printf("%d\t",node->data);
+ }
