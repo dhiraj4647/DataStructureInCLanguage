@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int i=1,j=1,num=0;
+    printf("Enter the number of rows::");
+    scanf("%d",&num);
+    for(i=0;i<num;i++){
+        for(j=1;j<=num-i;j++){
+            printf("%d ",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+output:
+Enter the number of rows::5
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1 
