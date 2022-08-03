@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int i=1,j=1,k,num=0;
+    printf("Enter the number of rows::");
+    scanf("%d",&num);
+    for(i=0;i<num;i++){
+        for(k=0;k<i;k++){
+            printf(" ");
+        }
+        for(j=num-i;j>=1;j--){
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+output:
+Enter the number of rows::5
+54321
+ 4321
+  321
+   21
+    1
